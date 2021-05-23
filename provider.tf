@@ -1,10 +1,9 @@
 terraform {
   backend "remote" {
-    hostname     = "app.terraform.io"
     organization = "rootabyss"
 
     workspaces {
-      name = "test"
+      name = "tf-test"
     }
   }
 }

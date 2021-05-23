@@ -1,8 +1,8 @@
 terraform {
   backend "remote" {
-    hostname = "app.terraform.io"
+    hostname     = "app.terraform.io"
     organization = "rootabyss"
-    
+
     workspaces {
       name = "test"
     }
@@ -11,5 +11,5 @@ terraform {
 
 provider "aws" {
   profile = "terraform-test"
-  region = "ap-northeast-2"
+  region  = "ap-northeast-2"
 }

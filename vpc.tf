@@ -1,7 +1,7 @@
 resource "aws_vpc" "test" {
   cidr_block = "172.10.0.0/20"
   tags = {
-    Name = "test"
+    Name = "tf-test"
   }
 }
 

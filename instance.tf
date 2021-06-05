@@ -1,5 +1,5 @@
 resource "aws_instance" "test_server" {
-  ami               = "	ami-0be9734c9e68b99f4" # ubuntu 20.04 LTS Focal
+  ami               = "ami-0be9734c9e68b99f4" # ubuntu 20.04 LTS Focal
   instance_type     = "t2.micro"
   availability_zone = aws_subnet.test-a.availability_zone
   vpc_security_group_ids = [

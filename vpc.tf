@@ -26,3 +26,9 @@ resource "aws_subnet" "test-c" {
   cidr_block        = "172.10.2.0/24"
   availability_zone = "data.aws_availability_zones.available.names[2]"
 }
+
+resource "aws_subnet" "test-d" {
+  vpc_id            = aws_vpc.test.id
+  cidr_block        = "172.10.3.0/24"
+  availability_zone = "data.aws_availability_zones.available.names[3]"
+}
